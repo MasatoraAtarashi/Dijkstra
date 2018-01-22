@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="name" content="content" charset="utf-8">
+	<title></title>
+	<script type="text/javascript" src="dijkstra.js"></script>
+</head>
+<body>
+	<h1>ダイクストラのアルゴリズム</h1>
+	<img src="graph.png" alt="グラフ" height="300px" width="300px">
+	<h3>好きに設定してください</h3>
+	重み(a-b)<input type="text" id="ab1" value="25.4951">　
+	重み(a-c)<input type="text" id="ac1" value="25.0" >
+	重み(a-d)<input type="text" id="ad1" value="30.4138" ><br>
+
+	重み(b-d)<input type="text" id="bd1" value="40.3113" >　
+	重み(b-h)<input type="text" id="bh1" value="76.4853" >
+	重み(c-d)<input type="text" id="cd1" value="22.3607" ><br>
+
+	重み(c-e)<input type="text" id="ce1" value="28.2843" >
+	重み(d-e)<input type="text" id="de1" value="41.2311" >
+	重み(d-f)<input type="text" id="df1" value="31.6228" ><br>
+
+	重み(d-g)<input type="text" id="dg1" value="55.9017" >
+	重み(d-h)<input type="text" id="dh1" value="53.1507" >
+	重み(e-g)<input type="text" id="eg1" value="42.72" ><br>
+
+	重み(f-g)<input type="text" id="fg1" value="40.3113" >　
+	重み(f-h)<input type="text" id="fh1" value="26.9258" >
+	重み(g-h)<input type="text" id="gh1" value="60.8276" ><br>
+
+	最短ルートと最短距離(a)
+	<input type="text" placeholder="最短ルート" id="a1" readonly>
+	<input type="text" placeholder="最短距離" id="a2" readonly><br>
+	最短ルートと最短距離(b)
+	<input type="text" placeholder="最短ルート" id="b1" readonly>
+	<input type="text" placeholder="最短距離" id="b2" readonly><br>
+	最短ルートと最短距離(c)
+	<input type="text" placeholder="最短ルート" id="c1" readonly>
+	<input type="text" placeholder="最短距離" id="c2" readonly><br>
+	最短ルートと最短距離(d)
+	<input type="text" placeholder="最短ルート" id="d1" readonly>
+	<input type="text" placeholder="最短距離" id="d2" readonly><br>
+	最短ルートと最短距離(e)
+	<input type="text" placeholder="最短ルート" id="e1" readonly>
+	<input type="text" placeholder="最短距離" id="e2" readonly><br>
+	最短ルートと最短距離(f)
+	<input type="text" placeholder="最短ルート" id="f1" readonly>
+	<input type="text" placeholder="最短距離" id="f2" readonly><br>
+	最短ルートと最短距離(g)
+	<input type="text" placeholder="最短ルート" id="g1" readonly>
+	<input type="text" placeholder="最短距離" id="g2" readonly><br>
+	最短ルートと最短距離(h)
+	<input type="text" placeholder="最短ルート" id="h1" readonly>
+	<input type="text" placeholder="最短距離" id="h2" readonly><br>
+	<input type="button" value="実行" onclick="solve();">
+	<input type="button" value="リセット" onclick="reset();">(一度実行したら必ずリセットボタンを押してください)
+</body>
+</html>
